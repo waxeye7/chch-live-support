@@ -70,7 +70,7 @@ The app is built on chch.live, and most content comes through `api.chch.live`. S
 - **Images on the Today wire.** Many images load directly from the publisher's or image host's own servers, not through chch.live. Hosts seen include news sites, Reddit, Flickr, Mastodon and iNaturalist image servers. Those hosts see the request.
 - **Articles.** Tapping a headline opens the publisher's own page in an in-app browser. That site's own privacy policy applies to anything it collects. The app does not send your browsing history anywhere.
 - **Nature sightings.** Opening a sighting contacts `api.inaturalist.org` with the observation ID.
-- **App updates.** At launch, and about every 6 hours while the app is open, the app checks Expo (`expo.dev`) for updates. Expo sees your IP address, the app version and the update channel.
+- **App updates.** At launch, and about every 6 hours while the app is open, the app checks Expo (`expo.dev`) for updates. Expo sees your IP address, the app version, the update channel and a random install identifier created by Expo's update library. The identifier is not your name, your email or your advertising ID.
 - **Bus stop data.** The app downloads bus stop and route files from `www.chch.live`.
 - **Google Cloud Vision.** Used on the server only, to screen Sent in photos as described above. Google processes the resized copy on my behalf under Google's terms.
 - **Links to other apps.** Map links and share buttons open other apps. The app sends nothing to them itself.
